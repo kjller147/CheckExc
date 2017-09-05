@@ -7,18 +7,86 @@
     android:orientation="vertical"
     tools:context="com.android.spcollege.checkexc.LoginActivity">
 
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="99dp"
+        android:layout_height="83dp"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
     <EditText
-        android:id="@+id/user_name"
+        android:id="@+id/new_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="@string/new_customer"
+        android:layout_marginEnd="63dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/full_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="username"
+        android:hint="Full Name:" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address:" />
+
+    <EditText
+        android:id="@+id/billing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Billing Address:"/>
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Height:"
         />
 
     <EditText
+        android:id="@+id/weight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Full Name:"/>
+        android:hint="Weight:" />
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="108dp">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="19dp"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cancel_button"
+            android:layout_alignBottom="@+id/cancel_button"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="31dp"
+            android:text="Save" />
+
+    </RelativeLayout>
 
 
 </LinearLayout>
