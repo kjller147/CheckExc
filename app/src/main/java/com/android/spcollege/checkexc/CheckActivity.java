@@ -23,11 +23,13 @@ public class CheckActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.logout,m);
         return true;
     }
-
+    //LogOff button
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
         if (id == R.id.action_settings){
             startActivity(new Intent(CheckActivity.this, LoginActivity.class));
+        } if (id == R.id.camera_setting) {
+            startActivity(new Intent(this, CameraActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }
