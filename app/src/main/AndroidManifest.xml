@@ -37,7 +37,10 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".ListDataActivity"
+            android:exported="true">
 
+        </activity>
     </application>
 
 </manifest>
